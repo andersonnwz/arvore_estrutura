@@ -22,7 +22,7 @@ int main(){
         break;
         default:
             printf("Entrada Invalida.\n");
-            break;
+            break; 
         }
     }while(user==0);
     

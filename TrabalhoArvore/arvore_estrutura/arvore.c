@@ -11,7 +11,7 @@ NoArvore* criarNo (char valordigitado){
         no->valor = valordigitado;
         no->esq = NULL;
         no->dir = NULL;
-        return no;
+        return no; 
     }
 }
 

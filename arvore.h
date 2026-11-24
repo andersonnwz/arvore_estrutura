@@ -2,8 +2,10 @@
 #ifndef ARVORE_H
 #define ARVORE_H
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>   
+#include <stdlib.h> 
+#include <ctype.h>   
+#include <string.h>
 
 typedef struct noArvore {
     char valor;                  
@@ -20,3 +22,5 @@ typedef struct pilha{
 
 
 #endif
+ 
+void descricaoopcao();

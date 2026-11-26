@@ -12,6 +12,7 @@ int main(){
         switch (user){
         case 1:
             printf("\nNotacao Infixa selecionada\nInsira sua conta\n>>  ");
+            Infixo();
         break;
         case 2:
             printf("\nNotacao Pos-fixa selecionada\nInsira sua conta\n>>  ");

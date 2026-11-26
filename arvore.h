@@ -6,9 +6,10 @@
 #include <stdlib.h> 
 #include <ctype.h>   
 #include <string.h>
+#include <stdbool.h>
 
-typedef struct noArvore {
-    char valor;                  
+typedef struct noArvore {   
+    char valor;                               
     struct noArvore *esq;       
     struct noArvore *dir;  
 } NoArvore;
@@ -21,6 +22,23 @@ typedef struct pilha{
 }pilha;
 
 
+typedef struct caracterconta{
+    char Caracter;
+    struct caracterconta *proxCaracter;
+}caracterconta;
+
+typedef struct conta {                  
+    caracterconta *comeco;
+    caracterconta *fim; 
+} conta;
+
+
 #endif
  
 void descricaoopcao();
+
+caracterconta* criar_no(char c);
+void iniciarcontaInfiso(conta *containteira);
+bool lernumIn(char temp);
+void calculoInfixo(int i, char temp[500], caracterconta *atual, conta *c);
+void Infixo();

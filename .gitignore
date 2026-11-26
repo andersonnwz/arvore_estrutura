@@ -1,6 +1,8 @@
 *.exe
 *.out
 arvore
+main
+infixo
 
 # Executaveis e artefatos de compilacao em C
 a.out

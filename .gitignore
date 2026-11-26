@@ -1,0 +1,8 @@
+*.exe
+*.out
+arvore
+
+# Executaveis e artefatos de compilacao em C
+a.out
+*.bin
+*.o

@@ -9,6 +9,15 @@ caracterconta* criar_no(char c) {
     return novo;
 }
 
+void liberar_lista(caracterconta *inicio) {
+    caracterconta *atual = inicio;
+    while (atual != NULL) {
+        caracterconta *proximo = atual->proxCaracter;
+        free(atual);
+        atual = proximo;
+    }
+}
+
 void iniciarcontaInfiso(conta *containteira) {
     containteira->comeco = NULL;
     containteira->fim = NULL;
@@ -65,4 +74,6 @@ void Infixo() {
     if (scanf(" %499[^\n]", temp) == 1) {
         calculoInfixo(0, temp, c.comeco, &c);
     }
+
+    liberar_lista(c.comeco);
 }

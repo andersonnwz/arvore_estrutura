@@ -33,12 +33,13 @@ typedef struct conta {
 } conta;
 
 
-#endif
- 
 void descricaoopcao();
 
 caracterconta* criar_no(char c);
+void liberar_lista(caracterconta *inicio);
 void iniciarcontaInfiso(conta *containteira);
 bool lernumIn(char temp);
 void calculoInfixo(int i, char temp[500], caracterconta *atual, conta *c);
 void Infixo();
+
+#endif

@@ -20,6 +20,9 @@ int main(){
         case 3:
             descricaoopcao();
         break;
+        case 0:
+            printf("Saindo do programa...\n");
+        break;
         default:
             printf("Entrada Invalida.\n");
             break; 
